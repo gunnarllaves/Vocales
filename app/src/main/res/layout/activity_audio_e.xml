@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_audio_e"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context="com.example.gunna.vocales.audio_e">
+    <Button
+        android:text="Play"
+        android:textSize="40sp"
+        android:background="@drawable/boton_a"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/inicio"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="21dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:text="Parar"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/boton_i"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/parar"
+        android:textStyle="bold|italic"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/inicio"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:text="Salir"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:background="@drawable/boton_salir"
+        android:onClick="salirAudio_e"
+        android:textColor="#FFFFFF"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/button16"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>

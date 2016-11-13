@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vocal_u"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gunna.vocales.Vocal_u">
+
+    <TextView
+        android:text="Elija la opcion de entrada al tutorial de la vocal"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:id="@+id/textView2"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:text="Ver texto"
+        android:textSize="20sp"
+        android:background="@drawable/texto"
+        android:textColor="#FFFFFF"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/button8"
+        android:onClick="siguiente_texto_U"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        android:layout_marginStart="98dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="59dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView2"
+        android:layout_marginLeft="98dp" />
+
+    <Button
+        android:text="Escuchar Audio"
+        android:background="@drawable/audio_a"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/button9"
+        android:onClick="siguiente_audio_U"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintRight_toRightOf="@+id/button8"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button8" />
+
+    <Button
+        android:text="Ver Video"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/video_a"
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/button10"
+        android:onClick="siguiente_video_U"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintRight_toRightOf="@+id/button9"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button9" />
+
+    <Button
+        android:text="Salir"
+        android:background="@drawable/boton_salir"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/button11"
+        android:onClick="salir_u"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/button10"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button10" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+
+        <shape>
+            <solid android:color="#CFD8DC"/>
+            <corners android:radius="@dimen/radio_boton"></corners>
+        </shape>
+
+    </item>
+
+    <item android:state_enabled="false">
+
+        <shape>
+            <solid android:color="#9E9E9E"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <gradient android:startColor="#455A64"
+                android:endColor="#607D8B"
+                android:angle="270"
+                />
+            <corners android:radius="@dimen/radio_boton"/>
+        </shape>
+    </item>
+</selector>
